@@ -5,7 +5,7 @@
             "thumbnail": "src/assets/images/image-waffle-thumbnail.jpg",
             "mobile": "./assets/images/image-waffle-mobile.jpg",
             "tablet": "./assets/images/image-waffle-tablet.jpg",
-            "desktop": "src/assets/images/image-waffle-desktop.jpg"
+            "desktop": "./assets/images/image-waffle-desktop.jpg"
        },
        "name": "Waffle with Berries",
        "category": "Waffle",
@@ -17,7 +17,7 @@
             "thumbnail": "src/assets/images/image-creme-brulee-thumbnail.jpg",
             "mobile": "src/assets/images/image-creme-brulee-mobile.jpg",
             "tablet": "src/assets/images/image-creme-brulee-tablet.jpg",
-            "desktop": "src/assets/images/image-creme-brulee-desktop.jpg"
+            "desktop": "./assets/images/image-creme-brulee-desktop.jpg"
         },
         "name": "Vanilla Bean Crème Brûlée",
         "category": "Crème Brûlée",
