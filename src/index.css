@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background: hsl(13, 31%, 94%);
+}
+
+@layer utilities {
+    h2 {
+      @apply  text-red font-bold text-xl font-redhat text-left
+    }
+    section {
+      @apply flex flex-col text-primary font-medium text-base font-redhat bg-rose50 p-6 rounded-lg h-auto w-[300px]
+        }
+
+        h1 {
+            @apply text-primary font-medium text-4xl font-redhat font-bold
+          }
+        h3 {
+            @apply text-primary font-medium text-sm font-redhat font-bold
+          }
+        h5 {
+            @apply text-rose400 font-medium text-xs font-redhat
+          }
+        h4 {
+            @apply text-red font-medium text-xs font-redhat font-bold
+          }
+
+        input {
+          @apply w-12 bg-red text-center outline-none text-rose50 text-xs font-medium
+        }
+
+        .button {
+          @apply flex flex-row gap-2 items-center border-2 border-rose300 rounded-full px-4 py-1 text-xs font-medium absolute bg-white hover:text-red hover:border-red
+      }
+    }
+
+    .primary-btn {
+      @apply flex flex-row gap-2 items-center border-2 border-rose300 rounded-full px-4 py-1 text-xs font-medium absolute bg-white hover:text-red hover:border-red
+  }
+    .secondary-btn {
+      @apply flex justify-center items-center text-rose50 bg-red w-full border-none p-2 rounded-full
+  }
+  .cart-details {
+    @apply flex flex-col justify-center items-center text-rose300 font-medium text-xs font-redhat 
+    }
+    .foodcard-details {
+        @apply flex flex-col justify-between text-primary font-medium text-base font-redhat mt-0
+    }
+    .body {
+        @apply flex flex-col md:flex-row justify-between text-primary font-medium text-base font-redhat
+    }
+    .foodcard {
+        @apply grid grid-cols-2  md:grid-cols-3 grid-flow-row grid-rows-1 gap-10  font-medium text-base font-redhat mt-8
+    }
+    .foodcard-img {
+        @apply font-medium text-base font-redhat rounded-lg mb-4
+    }
+    .foodcard-img-active {
+        @apply font-medium text-base font-redhat rounded-lg mb-4 border-2 border-red
+    }
+    .foodcard-body {
+        @apply flex flex-col justify-end md:items-center 
+    }
+    .foodcard-details {
+        @apply flex flex-col justify-between
+    }
+    .foodcard-info {
+        @apply flex flex-col space-y-2 mt-2
+    }
+    .cart-number {
+      @apply flex flex-row justify-between items-center bg-red px-2 py-2 rounded-full w-[127.74px] h-[32px] absolute
+    }
+    .cart-number p {
+      @apply flex justify-center items-center text-rose50 text-xs font-medium border-2 border-rose50 rounded-full p-2 h-[2px] w-[2px] hover:bg-rose50 hover:text-red
+    }
+    .order-details {
+        @apply flex flex-row justify-between items-center
+    }
+    .items-details {
+        @apply flex flex-col space-y-2 justify-between py-2
+    }
+    .items-details h1 {
+        @apply text-sm font-medium
+    }
+    .items-details p {
+        @apply flex space-x-4
+    }
+    .quantity {
+        @apply text-sm font-medium text-red
+    }
+    .price {
+        @apply text-sm font-light text-rose300
+    }
+    .price-total {
+        @apply text-sm font-medium text-rose400
+    }
+    .delete {
+      @apply flex justify-center items-center text-rose400 text-xs font-medium border-2 border-rose400 rounded-full p-2 h-[2px] w-[2px] hover:border-red hover:text-red cursor-pointer
+    }
+    .total-order p {
+      @apply flex  flex-row  justify-between items-center
+  }
+    .total-order {
+      @apply flex  flex-col gap-4 mt-4
+  }
+    .total-order-details {
+      @apply flex  flex-col  my-2
+    }
+    .total-order-details p {
+      @apply text-rose300
+  }
+  .total-order-details h1 {
+      @apply text-2xl font-bold
+    }
+    .delivery-type {
+      @apply flex flex-row justify-center items-center p-2 gap-1 bg-rose100 rounded-lg w-full text-xs
+  }
+    .confirm {
+      @apply flex flex-col justify-between space-y-4
+  }
+    .broken-cake-img {
+      @apply p-2 
+  }
+    .order-confirm-inset {
+      @apply fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center
+  }
+    .order-confirm {
+      @apply fixed  bg-black bg-opacity-50 flex items-center justify-center flex flex-col
+  }
+  
+  .confirm-items-details {
+    @apply flex flex-col space-y-2 justify-between
+  }
+  .confirm-items-details h1 {
+    @apply text-xs font-medium
+}
+.confirm-items-details p {
+  @apply flex space-x-4 text-xs
+}
+.confirm-details {
+  @apply flex flex-col bg-rose50 p-5 rounded-lg w-[350px]
+}
+.satisfactory {
+    @apply flex flex-col text-sm mb-6
+  }
+  .satisfactory h1 {
+    @apply text-xl
+}
+.satisfactory p {
+  @apply text-xs text-rose300
+}
+.a {
+  @apply flex flex-row items-center w-full 
+}
+.b {
+ @apply p-3 bg-rose100 w-full
+}
+.c {
+ @apply flex flex-row items-center gap-2 w-full
+}
+.d {
+  @apply flex flex-row 
+ }
+.thumbnail {
+  @apply rounded-lg w-[40px] h-[40px] 
+}
+ .confirm-order-details {
+  @apply flex flex-row justify-between items-center
+}
+.confirm-order-details p {
+  @apply text-rose300 text-sm
+}
+.confirm-order-details h1 {
+  @apply text-xl font-bold
+}
+.new-order-btn {
+  @apply flex justify-center items-center text-rose50 bg-red w-full border-none p-2 rounded-full mt-6
+}
+
+
+/* .confirm-total-order {
+  @apply flex flex-col
+} */
+.items-details p {
+  @apply flex space-x-4
+}
+.quantity {
+    @apply text-sm font-medium text-red
+  }
+  .price {
+    @apply text-sm font-light text-rose300
+  }
+.price-total {
+    @apply text-sm font-medium text-rose400
+}
+
+
+    
